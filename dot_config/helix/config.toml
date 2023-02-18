@@ -1,0 +1,42 @@
+#
+# Helix Config
+#
+[editor]
+line-number = "relative"
+scrolloff = 10
+cursorline = true
+cursorcolumn = false
+auto-save = true
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-name"]
+right = [
+  "diagnostics", 
+  "selections", 
+  "position", 
+  "file-encoding", 
+  "file-line-ending", 
+  "file-type",
+  "file-encoding",
+]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
