@@ -26,8 +26,8 @@ if status is-interactive
     #
     # Fish
     abbr --add fial abbr --list
-    abbr --add fis source ~/.config/fish/config.fish
-    abbr --add fie hx ~/.config/fish/config.fish
+    abbr --add fis "source ~/.config/fish/config.fish"
+    abbr --add fie "pushd ~/.config/fish; hx config.fish; popd"
     abbr --add fiv cat ~/.config/fish/config.fish
     abbr --add .z --position anywhere '| fzf'
     # Chezmoi
