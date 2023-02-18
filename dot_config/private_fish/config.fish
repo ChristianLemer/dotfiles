@@ -20,6 +20,7 @@ if status is-interactive
     alias ls="exa --git --icons"
     alias la="ls -la"
     alias cat="bat"
+    alias fzfp="fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
 
     #
     # Abbrevs
