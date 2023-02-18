@@ -40,6 +40,11 @@ if status is-interactive
     # Git
     abbr --add gis git status
     abbr --add gid git diff    
+    # Cargo
+    abbr --add cwn cargo watch --clear --exec \"nextest run --nocapture\"
+    abbr --add cwr cargo watch --clear --exec \"run -- $CARGO_RUN_ARGS\"
+    abbr --add cwt cargo watch --clear --exec test
+    abbr --add cwc cargo watch --clear --exec check
 
     #
     # other utilities
