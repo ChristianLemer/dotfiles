@@ -14,6 +14,9 @@ insert = "bar"
 normal = "block"
 select = "underline"
 
+[editor.file-picker]
+hidden = true
+
 [editor.statusline]
 left = ["mode", "spinner"]
 center = ["file-name"]
@@ -31,12 +34,12 @@ mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
 
-[editor.whitespace.render]
-space = "all"
-tab = "all"
-newline = "none"
+# [editor.whitespace.render]
+# space = "all"
+# tab = "all"
+# newline = "none"
 
 [editor.indent-guides]
 render = true
-character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+character = "|" # Some characters that work well: "▏", "┆", "┊", "⸽"
 skip-levels = 1
