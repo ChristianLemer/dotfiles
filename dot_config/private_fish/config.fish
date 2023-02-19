@@ -35,9 +35,11 @@ if status is-interactive
     abbr --add cma chezmoi add
     abbr --add cmc chezmoi cd
     abbr --add cmd chezmoi diff
+    abbr --add cme chezmoi edit
     abbr --add cmm chezmoi managed
     abbr --add cmr chezmoi re-add
     abbr --add cms chezmoi status
+    abbr --add cmp chezmoi apply
     # Git
     abbr --add gis git status
     abbr --add gid git diff    
