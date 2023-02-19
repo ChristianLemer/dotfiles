@@ -10,6 +10,7 @@ function mytmate
 		send-keys -t 'hermes' 'cd ~/git/lemerco/hermes;hx .' C-m \; \
 		split-window -h \; \
 		send-keys -t 'hermes' 'cd ~/git/lemerco/hermes;cwn' C-m \; \
+		resize-pane -t 1 -x 100 \; \
 		new-window -n 'hermes-git' \; \
 		send-keys -t 'hermes-git' 'cd ~/git/lemerco/hermes;lazygit' C-m \; \
 		new-window -n 'obsidian' \; \
