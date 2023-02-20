@@ -11,6 +11,7 @@ function mytmate
 		split-window -h \; \
 		send-keys -t 'hermes' 'cd ~/git/lemerco/hermes;cwn' C-m \; \
 		resize-pane -t 1 -x 100 \; \
+		select-pane -t 0 \; \
 		new-window -n 'hermes-git' \; \
 		send-keys -t 'hermes-git' 'cd ~/git/lemerco/hermes;lazygit' C-m \; \
 		new-window -n 'obsidian' \; \
@@ -22,8 +23,10 @@ function mytmate
 		select-pane -t 0 \; \
 		new-window -n 'chezmoi' \; \
 		send-keys -t 'chezmoi' 'clear;chezmoi cd' C-m \; \
-		select-window -t "hermes" \; \
+		split-window -h \; \
+		send-keys -t 'chezmoi' 'cd ~/.local/share/chezmoi; lazygit' C-m \; \
 		select-pane -t 0 \; \
+		select-window -t "hermes" \; \
 
 	tmate -S $mytmatesocket display -p '#{tmate_ssh}' | xclip -selection clipboard
 
