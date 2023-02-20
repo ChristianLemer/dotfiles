@@ -16,7 +16,7 @@ if status is-interactive
     #
     # Aliases
     #
-    alias h="history"
+    alias h="history | fzf"
     alias ls="exa --git --icons"
     alias la="ls -la"
     alias cat="bat"
