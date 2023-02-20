@@ -7,6 +7,13 @@ if status is-interactive
     fish_add_path .local/bin
     fish_add_path .cargo/bin
 
+
+    #
+    # Set environment variables
+    #
+    set --universal --export COLORTERM truecolor
+    set --universal --export EDITOR hx
+    
     #
     # pbcopy on ubuntu
     #
